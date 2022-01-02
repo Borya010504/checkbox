@@ -1,0 +1,59 @@
+.visually-hidden {
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   margin: -1px;
+   padding: 0;
+   overflow: hidden;
+   border: 0;
+   clip: rect(0 0 0 0);
+}
+
+
+
+form{
+   display: flex;
+   flex-direction: column;
+   width: 200px;
+   margin: 0 auto;
+}
+.box{
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+}
+label{
+   display: flex;
+   font-size: 30px;
+   flex-direction: row-reverse;
+   margin-right: auto;
+}
+.input__controller{
+   display: inline-block;
+   width: 30px;
+   height: 30px;
+   border: 1px solid #000;
+   border-radius: 5px;
+   margin-right: 15px;
+}
+input:checked ~ .input__controller--tennis {
+   background-image: url(/images/table-tennis.png);
+   background-position: center;background-repeat: no-repeat;
+   background-size: 80%;
+}
+
+input:checked ~ .input__controller--basketball{
+   background-image: url(/images/basketball-ball.png);
+   background-position: center;background-repeat: no-repeat;
+   background-size: 80%;
+}
+input:checked ~ .input__controller--volleyball{
+   background-image: url(/images/volleyball-ball.png);
+   background-position: center;background-repeat: no-repeat;
+   background-size: 80%;
+}
+input:checked ~ .input__controller--hockey{
+   background-image: url(/images/hockey-puck.png);
+   background-position: center;background-repeat: no-repeat;
+   background-size: 80%;
+}
