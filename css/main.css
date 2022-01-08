@@ -47,13 +47,14 @@ input:checked ~ .input__controller--basketball{
    background-position: center;background-repeat: no-repeat;
    background-size: 80%;
 }
-input:checked ~ .input__controller--volleyball{
-   background-image: url(/images/volleyball-ball.png);
+input:disabled ~ .input__controller--volleyball{
    background-position: center;background-repeat: no-repeat;
    background-size: 80%;
+   opacity: 0.5;
 }
-input:checked ~ .input__controller--hockey{
+input:disabled ~ .input__controller--hockey{
    background-image: url(/images/hockey-puck.png);
    background-position: center;background-repeat: no-repeat;
    background-size: 80%;
+   opacity: 0.5;
 }
